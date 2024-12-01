@@ -1,0 +1,102 @@
+/* src/app/dashboard/Dashboard.css */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .user-info {
+    text-align: center;
+    margin-bottom: 30px; /* adăugăm margine pentru a separa imaginea și username-ul */
+  }
+  
+  .user-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .user-avatar-placeholder {
+    width: 120px;
+    height: 120px;
+    background-color: #34495e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .username {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px; /* adăugăm margine pentru a separa username-ul de poză */
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    background-color: #ecf0f1;
+    padding: 30px;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    font-size: 32px;
+  }
+  
+  .roadmap-selector {
+    margin-top: 20px;
+  }
+  
+  .roadmap-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .roadmap-button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .roadmap-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  .roadmap-button.active {
+    background-color: #27ae60;
+  }
+  
+  .roadmap-details {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 16px;
+  }
+  
